@@ -1,0 +1,27 @@
+ALGORITHM pallindrome.algo
+VAR
+    result : INTEGER ;
+    i : INTEGER;
+    mot : CHAR;
+BEGIN
+    set_instructions
+END
+      Write ("Entrez un mot : ")
+           palindrome = True
+
+    FOR i FROM range mot.length DO
+         IF (mot[i] := mot[-i-1])THEN
+        palindrome = False;
+        break;
+        END_IF
+    END_FOR
+
+
+         IF palindrome:
+             READ (mot, "est un palindrome.")
+           ELSE
+             READ(mot, "n'est pas un palindrome.")
+        END_IF
+END
+
+
